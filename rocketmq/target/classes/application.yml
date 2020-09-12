@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: rocketmq
+
+server:
+  port: 7007
+
+logging:
+  level:
+    jdbc: error
+    jdbc.sqltiming: info
+
+rocketmq:
+  name-server: 10.29.129.17:9876;10.29.129.15:9876 # 自己的RocketMQ服务地址
+  producer:
+    group: mail-group
+
